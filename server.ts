@@ -4,12 +4,12 @@ import path from "path";
 import { fileURLToPath } from "url";
 import Database from "better-sqlite3";
 import dotenv from "dotenv";
-import { sendEmail } from "./src/services/emailService.js";
+import { sendEmail } from "./src/services/emailService.ts";
 import Stripe from "stripe";
 import { WebSocketServer, WebSocket } from "ws";
 import { createServer } from "http";
 import bcrypt from "bcryptjs";
-import { calculateMatch, NAKSHATRAS, RASIS } from "./src/utils/astrology.js";
+import { calculateMatch, NAKSHATRAS, RASIS } from "./src/utils/astrology.ts";
 
 dotenv.config();
 
