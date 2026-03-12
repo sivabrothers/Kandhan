@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-900: var(--color-primary-900);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-50: var(--color-primary-50);
+  
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-400: var(--color-accent-400);
+  
+  --color-bg-50: var(--color-bg-50);
+  --color-bg-100: var(--color-bg-100);
+  
+  --font-serif: "Poppins", "Noto Sans Tamil", serif;
+  --font-sans: "Inter", "Noto Sans Tamil", sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Default Theme: Royal Maroon & Gold */
+    --color-primary-900: #4a0000;
+    --color-primary-800: #600000;
+    --color-primary-700: #800000;
+    --color-primary-600: #990000;
+    --color-primary-50: #fff0f0;
+    
+    --color-accent-600: #B8860B;
+    --color-accent-500: #D4AF37;
+    --color-accent-400: #F4D03F;
+    
+    --color-bg-50: #FFFDF0;
+    --color-bg-100: #FFFDD0;
+  }
+
+  [data-theme="sapphire"] {
+    /* Sapphire Blue & Silver */
+    --color-primary-900: #0A192F;
+    --color-primary-800: #112240;
+    --color-primary-700: #233554;
+    --color-primary-600: #3A506B;
+    --color-primary-50: #E6F1FF;
+    
+    --color-accent-600: #8892B0;
+    --color-accent-500: #A8B2D1;
+    --color-accent-400: #CCD6F6;
+    
+    --color-bg-50: #F8FAFC;
+    --color-bg-100: #F1F5F9;
+  }
+
+  [data-theme="emerald"] {
+    /* Emerald Green & Gold */
+    --color-primary-900: #064E3B;
+    --color-primary-800: #065F46;
+    --color-primary-700: #047857;
+    --color-primary-600: #059669;
+    --color-primary-50: #ECFDF5;
+    
+    --color-accent-600: #D97706;
+    --color-accent-500: #F59E0B;
+    --color-accent-400: #FBBF24;
+    
+    --color-bg-50: #FAFAF9;
+    --color-bg-100: #F5F5F4;
+  }
+
+  [data-theme="modern"] {
+    /* Premium Modern (Young Users) */
+    --color-primary-900: #3b3699;
+    --color-primary-800: #4c46c6;
+    --color-primary-700: #5b54e3;
+    --color-primary-600: #6C63FF;
+    --color-primary-50: #f0efff;
+    
+    --color-accent-600: #008a8a;
+    --color-accent-500: #00A8A8;
+    --color-accent-400: #33b9b9;
+    
+    --color-bg-50: #F8F9FB;
+    --color-bg-100: #F0F2F5;
+  }
+
+  [data-theme="diwali"] {
+    /* Diwali Theme (Dark Purple & Gold) */
+    --color-primary-900: #2D0A31;
+    --color-primary-800: #4A154B;
+    --color-primary-700: #6B216D;
+    --color-primary-600: #8E2C90;
+    --color-primary-50: #F9F0FA;
+    
+    --color-accent-600: #B8860B;
+    --color-accent-500: #D4AF37;
+    --color-accent-400: #F4D03F;
+    
+    --color-bg-50: #FFFDF0;
+    --color-bg-100: #FFFDD0;
+  }
+
+  [data-theme="pongal"] {
+    /* Pongal Theme (Green & Yellow) */
+    --color-primary-900: #064E3B;
+    --color-primary-800: #065F46;
+    --color-primary-700: #047857;
+    --color-primary-600: #059669;
+    --color-primary-50: #ECFDF5;
+    
+    --color-accent-600: #D97706;
+    --color-accent-500: #EAB308;
+    --color-accent-400: #FDE047;
+    
+    --color-bg-50: #FEFCE8;
+    --color-bg-100: #FEF9C3;
+  }
+
+  [data-theme="tamil-new-year"] {
+    /* Tamil New Year Theme (Red & Gold) */
+    --color-primary-900: #7F1D1D;
+    --color-primary-800: #991B1B;
+    --color-primary-700: #B91C1C;
+    --color-primary-600: #DC2626;
+    --color-primary-50: #FEF2F2;
+    
+    --color-accent-600: #B8860B;
+    --color-accent-500: #D4AF37;
+    --color-accent-400: #F4D03F;
+    
+    --color-bg-50: #FFFAF0;
+    --color-bg-100: #FEF08A;
+  }
+
+  body {
+    @apply bg-bg-50 text-primary-900 font-sans transition-colors duration-500;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-accent-500/20 shadow-xl rounded-2xl transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-primary-700 hover:bg-primary-800 text-accent-500 font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-primary-700/20 active:scale-95;
+}
+
+.btn-secondary {
+  @apply border-2 border-primary-700 text-primary-700 hover:bg-primary-700 hover:text-accent-500 font-bold py-3 px-8 rounded-full transition-all duration-300 active:scale-95;
+}

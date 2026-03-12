@@ -1,0 +1,7 @@
+{
+  "name": "Kandhan Kudil Matrimony – கந்தன் குடில் திருமண சேவை மையம்",
+  "description": "Premium Tamil community matrimony platform with AI horoscope matching, secure verification, and modern UI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
